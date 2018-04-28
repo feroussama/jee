@@ -1,0 +1,72 @@
+<div id="ngx-datatable" class="page-layout simple fullwidth"  fxLayout="column" fusePerfectScrollbar>
+
+  <!-- HEADER -->
+  <div class="header mat-accent-bg p-24 h-160" fxLayout="column" fxLayoutAlign="center center" fxLayout.gt-xs="row" fxLayoutAlign.gt-xs="space-between center">
+    <div fxLayout="column" fxLayoutAlign="center center" fxLayout.gt-xs="column" fxLayoutAlign.gt-xs="center start">
+      <div class="black-fg" fxLayout="row" fxLayoutAlign="start center">
+        <mat-icon class="secondary-text s-16">home</mat-icon>
+        <mat-icon class="secondary-text s-16">chevron_right</mat-icon>
+        <span class="secondary-text">ADMIN</span>
+      </div>
+      <div class="h2 mt-16">Espace Administrateur</div>
+    </div>
+
+
+  </div>
+
+
+  <mat-tab-group>
+    <mat-tab label="Gestion des Utilisateurs">
+      <mat-tab-group>
+        <mat-tab label="Ajouter un Utilisateur ">
+       <app-add-user></app-add-user>
+        </mat-tab>
+        <mat-tab label="Ajouter un Propriétaire ">
+          <app-add-prop></app-add-prop>
+        </mat-tab>
+
+        <mat-tab label="Liste des Utilisateurs ">
+          <app-affich-user></app-affich-user>
+        </mat-tab>
+        <mat-tab label="Liste des Propriétaires ">
+          <app-affich-user></app-affich-user>
+        </mat-tab>
+
+      </mat-tab-group>
+
+    </mat-tab>
+
+    <mat-tab label="Gestion des Appartements">
+      <mat-tab-group>
+        <mat-tab label="Liste des Appartemants Alloué ">
+          <app-affich-user></app-affich-user>
+        </mat-tab>
+        <mat-tab label="Liste des Appartemants non Alloué">
+          <app-affich-user></app-affich-user>
+        </mat-tab>
+
+      </mat-tab-group>
+    </mat-tab>
+
+      <mat-tab label="Gestion des Factures">
+        <app-pay-form></app-pay-form>
+  </mat-tab>
+  
+        <mat-tab label="Gestion des Annonces">      
+          <app-add-annonce></app-add-annonce>
+      </mat-tab>
+
+        <mat-tab label="Gestion des Publications">
+        
+        </mat-tab>
+
+          <mat-tab label="Gestion des Réclamation">
+          
+         
+          </mat-tab>
+
+  
+
+
+
+  </mat-tab-group>
